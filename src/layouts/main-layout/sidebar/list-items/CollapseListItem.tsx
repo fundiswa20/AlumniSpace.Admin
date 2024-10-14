@@ -23,7 +23,7 @@ const CollapseListItem = ({ subheader, active, items, icon }: MenuItem) => {
             <IconifyIcon
               icon={icon}
               sx={{
-                color: active ? 'primary.main' : null,
+                color: active ? 'primary' : null,
               }}
             />
           )}

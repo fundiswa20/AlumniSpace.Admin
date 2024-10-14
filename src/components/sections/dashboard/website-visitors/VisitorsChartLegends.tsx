@@ -56,9 +56,9 @@ const VisitorsChartLegends = ({ chartRef }: LegendsProps) => {
 
   const getDisableColor = (type: string) => {
     if (type === 'Organic') {
-      return theme.palette.primary.dark;
+      return theme.palette.primary;
     } else if (type === 'Social') {
-      return theme.palette.secondary.darker;
+      return theme.palette.primary;
     } else if (type === 'Direct') {
       return theme.palette.secondary.dark;
     }

@@ -2,19 +2,19 @@ import { fontFamily } from 'theme/typography';
 // import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
+import Button from '@mui/material/Button';
 
 interface ProductInfoProps {
   data: {
     
     name: string;
     inStock: number | string;
-    price: number | string;
+    //price: number | string;
   };
 }
 
 const Product = ({ data }: ProductInfoProps) => {
-  const { name, inStock, price } = data;
+  const { name, inStock,  } = data;
 
   return (
     <Stack alignItems="center" justifyContent="space-between">
@@ -31,10 +31,19 @@ const Product = ({ data }: ProductInfoProps) => {
             {inStock} responses
           </Typography>
         </Stack>
+        
       </Stack>
 
       <Typography variant="caption" fontWeight={400} fontFamily={fontFamily.workSans}>
-        $ {price}
+      <Button
+          variant="contained"
+          color="primary"
+          size="medium"
+          // endIcon={<IconifyIcon icon="mingcute:arrow-down-line" />}
+          sx={{ py: 0.875, zIndex: 1000 }}
+        >
+          View Responses
+        </Button>
       </Typography>
     </Stack>
   );

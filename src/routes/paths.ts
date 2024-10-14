@@ -7,7 +7,7 @@ export const rootPaths = {
 
 export default {
   dashboard: `/${rootPaths.pagesRoot}/dashboard`,
-  features: `/${rootPaths.pagesRoot}/features`,
+  features: `/${rootPaths.pagesRoot}/alumni`,
   users: `/${rootPaths.pagesRoot}/users`,
   pricing: `/${rootPaths.pagesRoot}/pricing`,
   integrations: `/${rootPaths.pagesRoot}/integrations`,

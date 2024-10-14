@@ -6,7 +6,7 @@ import {
   blue,
   cyan,
   purple,
-  violate,
+  //violate,
   yellow,
   white,
   transparentRed,
@@ -85,12 +85,13 @@ const palette: PaletteOptions = {
   text: {
     primary: white[500],
     secondary: grey[300],
-    disabled: grey[500],
+    disabled: blue[700],
+    heading: cyan[400],
   },
   gradients: {
     primary: {
       main: purple[500],
-      state: violate[600],
+      state: blue[200],
     },
   },
   transparent: {

@@ -1,38 +1,32 @@
 import Grid from '@mui/material/Grid';
 import TopCard from './TopCard';
-
+//import IconifyIcon from 'components/base/IconifyIcon';
 const cardsData = [
   {
     id: 1,
     title: 'Registered Alumni',
     value: '257',
-    rate: '28.4%',
-    isUp: true,
-    icon: 'carbon:favorite-filled',
+    icon: "material-symbols:person-add"
   },
   {
     id: 2,
     title: 'Donors',
     value: '232',
-    rate: '12.6%',
-    isUp: false,
-    icon: 'solar:bag-bold',
+
+    icon: 'carbon:favorite-filled',
   },
   {
     id: 3,
     title: 'Attendees',
     value: '156',
-    rate: '3.1%',
-    isUp: true,
-    icon: 'ph:bag-simple-fill',
+    icon: 'mingcute:user-2-fill',
   },
   {
     id: 4,
     title: 'Volunteers',
     value: '58',
-    rate: '11.3%',
-    isUp: true,
-    icon: 'mingcute:currency-dollar-2-line',
+    icon:"material-symbols-light:volunteer-activism-outline"
+   
   },
 ];
 
@@ -45,10 +39,7 @@ const TopCards = () => {
             key={item.id}
             title={item.title}
             value={item.value}
-            rate={item.rate}
-            isUp={item.isUp}
-            icon={item.icon}
-          />
+            icon={item.icon} isUp={false}          />
         );
       })}
     </Grid>

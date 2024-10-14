@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import RateChip from 'components/chips/RateChip';
 import DateSelect from 'components/dates/DateSelect';
 import EChartsReactCore from 'echarts-for-react/lib/core';
 import RevenueChartLegends from './RevenueChartLegends';
@@ -43,7 +42,7 @@ const RevenueByCustomer = () => {
           <Typography variant="h3" fontWeight={600} letterSpacing={1}>
             
           </Typography>
-          <RateChip rate={'14.8%'} isUp={true} />
+          {/* <RateChip rate={'14.8%'} isUp={true} /> */}
         </Stack>
 
         <Stack alignItems="center" spacing={2}>

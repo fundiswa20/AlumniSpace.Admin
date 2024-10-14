@@ -1,4 +1,4 @@
-import { fontFamily } from 'theme/typography';
+//import { fontFamily } from 'theme/typography';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -29,7 +29,7 @@ const productsData = [
 const Products = () => {
   return (
     <Stack direction="column" gap={3.75} component={Paper} height={300}>
-      <Typography variant="h6" fontWeight={400} fontFamily={fontFamily.workSans}>
+      <Typography variant="subtitle1" color="text.secondary">
         Events
       </Typography>
 
